@@ -87,7 +87,7 @@ A sweet & simple chart library for React Native that will make us feel like **W*
 To get started with using WAGMI charts in your React Native project, install the `react-native-wagmi-charts` package.
 
 ```
-npm install react-native-wagmi-charts
+npm install @metalpay/react-native-wagmi-charts
 ```
 
 WAGMI charts also depends on a few libraries, you will also need to install these packages if you don't already have them:
