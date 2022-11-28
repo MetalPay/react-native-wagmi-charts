@@ -9,9 +9,10 @@ import Animated, {
 } from 'react-native-reanimated';
 import flattenChildren from 'react-keyed-flatten-children';
 
-import { LineChartDimensionsContext } from './Chart';
-import { LineChartPath, LineChartPathProps } from './Path';
-import { useLineChart } from './useLineChart';
+import { LineChartDimensionsContext } from '../Chart';
+import { LineChartPath, LineChartPathProps } from '../Path';
+import { useLineChart } from '../useLineChart';
+import { LineChartPathContext } from './context';
 
 const BACKGROUND_COMPONENTS = [
   'LineChartHighlight',
@@ -22,12 +23,6 @@ const BACKGROUND_COMPONENTS = [
 const FOREGROUND_COMPONENTS = ['LineChartHighlight', 'LineChartDot'];
 
 const AnimatedSVG = Animated.createAnimatedComponent(Svg);
-
-export const LineChartPathContext = React.createContext({
-  color: '',
-  isInactive: false,
-  isTransitionEnabled: true,
-});
 
 type LineChartPathWrapperProps = {
   animationDuration?: number;
